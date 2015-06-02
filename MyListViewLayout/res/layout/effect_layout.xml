@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/effect_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/play" />
+
+    
+    <TextView
+        android:id="@+id/effect_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/effect_type"
+        android:layout_alignTop="@+id/effect_image"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/effect_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/effect_title"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/effect_image"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <SeekBar 
+        android:id="@+id/pitchSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/effect_type"
+        android:layout_below="@+id/effect_type" 
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="-10dp"/>
+
+     <SeekBar
+         android:id="@+id/volumeSeek"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/effect_type"
+         android:layout_below="@+id/pitchSeek"
+         android:layout_marginStart="0dp" 
+         android:layout_marginLeft="-10dp"/>
+
+</RelativeLayout>

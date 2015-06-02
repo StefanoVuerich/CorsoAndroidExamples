@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ff0000"
+    android:id="@+id/r_layout_fragment_uno">
+
+    <TextView
+        android:id="@+id/fragmentUnoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Fragment 1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button 
+        android:id="@+id/chiSono2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentUnoLabel"
+        android:layout_centerHorizontal="true"
+        android:text="Chi Sono ?"/>
+
+    <TextView
+        android:id="@+id/annuncioUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chiSono2"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+</RelativeLayout>

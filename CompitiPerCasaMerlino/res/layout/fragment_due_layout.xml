@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#66cd00"
+    android:id="@+id/r_layout_fragment_due">
+
+    <TextView
+        android:id="@+id/fragmentDueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Fragment 2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button 
+        android:id="@+id/chiSono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentDueLabel"
+        android:layout_centerHorizontal="true"
+        android:text="Chi Sono ?"/>
+    
+    <TextView
+        android:id="@+id/annuncioDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chiSono"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+</RelativeLayout>
